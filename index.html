@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub: Simple L402 payments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#635bff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6">
+            <nav class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">Hub</div>
+                <div class="space-x-6">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                    <a href="https://app.paywithhub.com/" class="text-primary font-semibold hover:text-primary-dark">Log in</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gray-50 py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl font-bold mb-6">Simple credit card payments for L402 content</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Pay for any L402 content using your credit card. No cryptocurrency knowledge required.</p>
+                <a href="https://app.paywithhub.com/" class="bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary-dark transition duration-300">Get started</a>
+            </div>
+        </section>
+
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#635bff" class="w-16 h-16 mx-auto mb-6">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm5.5-15.5l-7 7-3.5-3.5L5.5 11.5 10 16l8.5-8.5-1-1z"/>
+                        </svg>
+                        <h2 class="text-2xl font-semibold mb-4">Easy payments</h2>
+                        <p class="text-gray-600">Use your credit card to pay for L402 content without dealing with cryptocurrency.</p>
+                    </div>
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#635bff" class="w-16 h-16 mx-auto mb-6">
+                            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                        </svg>
+                        <h2 class="text-2xl font-semibold mb-4">Credential storage</h2>
+                        <p class="text-gray-600">We securely store your L402 credentials for easy access across multiple sites.</p>
+                    </div>
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#635bff" class="w-16 h-16 mx-auto mb-6">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+                        </svg>
+                        <h2 class="text-2xl font-semibold mb-4">API support</h2>
+                        <p class="text-gray-600">Integrate Hub into your applications using our API. Automate payments and workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="bg-gray-50 py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <details class="bg-white p-6 rounded-lg shadow-sm">
+                        <summary class="font-semibold cursor-pointer">What is L402 content?</summary>
+                        <p class="mt-4 text-gray-600">L402 is a protocol that allows content creators to monetize their digital content easily. Hub makes it simple to pay for this content using your credit card.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg shadow-sm">
+                        <summary class="font-semibold cursor-pointer">Do I need to understand cryptocurrency to use Hub?</summary>
+                        <p class="mt-4 text-gray-600">No, Hub allows you to pay with your regular credit card. We handle the complexities behind the scenes.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg shadow-sm">
+                        <summary class="font-semibold cursor-pointer">Can I use Hub programmatically?</summary>
+                        <p class="mt-4 text-gray-600">Yes, we offer an API that allows you to integrate Hub payments into your applications, automate workflows, or even use it with AI agents.</p>
+                    </details>
+                    <details class="bg-white p-6 rounded-lg shadow-sm">
+                        <summary class="font-semibold cursor-pointer">Why is there a $20 minimum payment, and what happens to the extra amount?</summary>
+                        <p class="mt-4 text-gray-600">We have a $20 minimum payment for credit card transactions to cover processing fees and provide a smoother experience. Here's how it works:</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-600">
+                            <li>If your purchase is less than $20, the remaining amount is added to your balance as credit.</li>
+                            <li>This credit can be used for future purchases on any L402 content through Hub.</li>
+                            <li>The minimum helps reduce transaction fees, allowing us to offer better rates for content creators and users.</li>
+                            <li>Your balance never expires, so you can use it whenever you want.</li>
+                        </ul>
+                        <p class="mt-2 text-gray-600">This system ensures efficient payments while giving you the flexibility to access various L402 content without multiple small transactions.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600 mb-6">&copy; 2024 Fewsats. All rights reserved.</p>
+            <nav class="space-x-6">
+                <a href="mailto:support@fewsats.com" class="text-gray-600 hover:text-gray-900">Questions?</a>
+                <!-- <a href="https://hub.com/terms" class="text-gray-600 hover:text-gray-900">Terms</a>
+                <a href="https://hub.com/privacy" class="text-gray-600 hover:text-gray-900">Privacy</a> -->
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
